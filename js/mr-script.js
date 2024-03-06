@@ -15,13 +15,13 @@ per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
 let numberKilometers = parseInt(prompt('quanti colometri devi percorrere?'));
 console.log(numberKilometers);
-if (numberKilometers = isNaN) {
+if (isNaN(numberKilometers)) {
     console.log('devi inserire un numero non un carattere!!!');
 }
 
 let userYearBirth = parseInt(prompt('in che anno sei nato?'));
 console.log(userYearBirth);
-if (userYearBirth = isNaN) {
+if (isNaN(userYearBirth)) {
     console.log('devi inserire un numero non un carattere!!!');
 }
 
@@ -30,18 +30,14 @@ console.log(currentYear);
 
 let userAge = currentYear - userYearBirth ;
 console.log(userAge);
-if (userAge = isNaN) {
-    console.log('devi inserire dei numeri non dei caratteri!!!');
-}
 
 let ticketPrice = numberKilometers * 0.21;
 console.log(ticketPrice);
 document.getElementById('price').innerHTML = 'Il prezzo del tuo biglietto è: ' + ticketPrice.toFixed(2) + '&euro;';
-if (ticketPrice = isNaN) {
+if (isNaN(ticketPrice)) {
     console.log('devi inserire dei numeri non dei caratteri!!!');
     document.getElementById('price').innerHTML = 'Devi inserire dei numeri non dei caratteri!!!';
 }
-
 
 if (userAge < 18) {
     ticketPrice = (ticketPrice - ((ticketPrice * 20) / 100)).toFixed(2); 
