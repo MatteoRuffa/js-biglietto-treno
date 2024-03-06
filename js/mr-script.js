@@ -47,16 +47,10 @@ if (userAge < 18) {
     ticketPrice = (ticketPrice - ((ticketPrice * 20) / 100)).toFixed(2); 
     console.log(ticketPrice);
     document.getElementById('price').innerHTML = 'Il prezzo del tuo biglietto è: ' + ticketPrice + '&euro;';
-    if (ticketPrice = isNaN) {
-        console.log('devi inserire dei numeri non dei caratteri!!!');
-        document.getElementById('price').innerHTML = 'Devi inserire dei numeri non dei caratteri!!!';
-    }
+    
 } else if (userAge >= 65) {
     ticketPrice = (ticketPrice - ((ticketPrice * 40) / 100)).toFixed(2); 
     console.log(ticketPrice);
     document.getElementById('price').innerHTML = 'Il prezzo del tuo biglietto è: ' + ticketPrice + '&euro;';
-    if (ticketPrice = isNaN) {
-        console.log('devi inserire dei numeri non dei caratteri!!!');
-        document.getElementById('price').innerHTML = 'Devi inserire dei numeri non dei caratteri!!!';
-    }
+   
 }
